@@ -25,12 +25,12 @@ function menu() {
         }
     };
 
-    const burger1 = new burger('Basic Burger', 'All beef', 'American', 'bacon, tomato, red onion, fried onions', 'basic grilled', pic1)
-    const burger2 = new burger('Classic double', 'dual all beef', 'American', 'Lettuce, pickels, tomato','classic sesame', pic2)
-    const burger3 = new burger('Hangover classic', 'Sausage burger', 'Swiss', 'Pepper and a mound full of fried onions', 'Classic plain', pic3)
-    const burger4 = new burger('Breakfast classic', 'All beef', 'N/A', 'Egg, spinach, tomato', 'sesame wheat', pic4)
-    const burger5 = new burger('Bulking breakfast', '1lb all beef', 'N/A', 'Egg, onions, pickels, sriracha', 'Honey wheat', pic5)
-    const burger6 = new burger('Pretentious basic', 'All beef', 'American', 'Anything you want', 'fancy bun', pic6)
+    const burger1 = new burger('Basic Burger', 'All beef', 'American', 'Bacon, tomato, red onion, fried onions', 'Basic grilled', pic1)
+    const burger2 = new burger('Classic Double', 'All beef dualies', 'American', 'Lettuce, pickels, tomato','Classic sesame', pic2)
+    const burger3 = new burger('Hangover Classic', 'Sausage burger', 'Swiss', 'Pepper and a mound full of fried onions', 'Classic plain', pic3)
+    const burger4 = new burger('Breakfast Classic', 'All beef', 'N/A', 'Egg, spinach, tomato', 'Sesame wheat', pic4)
+    const burger5 = new burger('Bulking Breakfast', '1lb all beef', 'N/A', 'Egg, onions, pickels, Sriracha', 'Honey wheat', pic5)
+    const burger6 = new burger('Pretentious Basic', 'All beef', 'American', 'Anything you want', 'Fancy bun', pic6)
 
     //const burgerX = new burger('', '', '', '', '', '')
 
@@ -45,15 +45,17 @@ function menu() {
             containerBurger.classList.add('burgerContainer')
             contentDiv.appendChild(containerBurger);
 
+            const burgerName = document.createElement('div');
+            burgerName.innerHTML = myMenu[i].name;
+            burgerName.classList.add('burgerName');
+            containerBurger.appendChild(burgerName);
+
             const displayImage = new Image();
             displayImage.src = myMenu[i].image;
             displayImage.classList.add('burgerImage');
             containerBurger.appendChild(displayImage);
 
-            const burgerName = document.createElement('div');
-            burgerName.innerHTML = myMenu[i].name;
-            burgerName.classList.add('burgerName');
-            containerBurger.appendChild(burgerName);
+
 
             const burgerMeat = document.createElement('div');
             burgerMeat.innerHTML ='Meat: ' + myMenu[i].meat;

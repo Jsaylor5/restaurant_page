@@ -28,7 +28,7 @@
 }
 
 html {
-    background-color: aqua;
+    background-color: rgb(25, 25, 24);
 }
 
 .title {
@@ -37,6 +37,7 @@ html {
     left: 30px;
     top: 20px;
     max-height: 60%;
+    color:rgb(0, 183, 255);
 }
 
 .tabTitle {
@@ -45,6 +46,7 @@ html {
     display: flex;
     justify-content: center;
     padding-top: 10px;
+    color: rgb(0,255,255);
 }
 
 .info {
@@ -52,7 +54,8 @@ html {
     font-family: 'MyFont';
     display: flex;
     justify-content: center;
-    padding-top: 15px;;
+    padding-top: 15px;
+    color:rgb(0, 183, 255);
 }
 
 .extraImg {
@@ -61,4 +64,34 @@ html {
     margin-right: auto;
     padding-top: 20px;
 
+}
+
+.burgerImage {
+    display: block;
+    width: 600px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.burgerContainer {
+    border: 5px solid rgb(0,255,255);
+    padding: 10px;
+    margin-top: 10px;
+    width: 1200px;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+.burgerName {
+    float: left;
+    font-size: 2vw;
+    font-family: 'MyFont';
+    color:rgb(0, 183, 255);
+}
+
+.burgerstat {
+    font-size: 1.5vw;
+    font-family: 'MyFont';
+    color:rgb(0, 183, 255);
 }

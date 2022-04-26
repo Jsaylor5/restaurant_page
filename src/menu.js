@@ -55,8 +55,6 @@ function menu() {
             displayImage.classList.add('burgerImage');
             containerBurger.appendChild(displayImage);
 
-
-
             const burgerMeat = document.createElement('div');
             burgerMeat.innerHTML ='Meat: ' + myMenu[i].meat;
             burgerMeat.classList.add('burgerstat');

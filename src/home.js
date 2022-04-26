@@ -5,7 +5,7 @@ function homePage() {
 
     const myMainPic = new Image();
     myMainPic.src = mainPic;
-    myMainPic.classList.add('mainPic')
+    myMainPic.classList.add('extraImg')
     contentDiv.appendChild(myMainPic)
 
 };

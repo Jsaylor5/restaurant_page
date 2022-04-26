@@ -1,8 +1,3 @@
-// function testmenuHeader() {
-//      console.log('sup?')
-// }
-
-// export default testmenuHeader
 
 function menuBar() {
     let content = document.createElement('div');
@@ -15,7 +10,7 @@ function menuBar() {
     contentDiv.appendChild(fullMenuBar);
 
     const title = document.createElement('div');
-    title.innerHTML = 'Gourmet Burgers';
+    title.innerHTML = 'Gorsky\'s Gourmet Burgers';
     title.classList.add('title');
     contentDiv.appendChild(title);
 
